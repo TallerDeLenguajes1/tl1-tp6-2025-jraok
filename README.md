@@ -1,1 +1,27 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/24pP-Pw_)
+# TP06 - Taller de Lenguajes I (2025)
+
+Este repositorio contiene la implementación del Trabajo Práctico N°6 de la materia **Taller de Lenguajes I**. El objetivo principal es aplicar conceptos fundamentales de programación orientada a objetos en **C#**, utilizando la plataforma **.NET**.
+
+## 💡 Temas trabajados
+
+- Clases y objetos
+- Encapsulamiento (getters/setters)
+- Listas genéricas (`List<T>`)
+- Estructuras de control (`if`, `switch`, `for`, etc.)
+- Menú interactivo por consola
+- Cálculo de promedios
+- Buenas prácticas de código
+
+## 🧾 Descripción general
+
+El programa permite:
+- Cargar alumnos con nombre, apellido y notas.
+- Mostrar información de los alumnos ingresados.
+- Calcular y mostrar el promedio de cada alumno.
+- Ejecutar distintas acciones mediante un menú en consola.
+
+## ⚙️ Tecnologías utilizadas
+
+- Lenguaje: **C# 12** (o superior)
+- Plataforma: **.NET 8.0** o superior
+- IDE recomendado: **Visual Studio** o **Visual Studio Code**
