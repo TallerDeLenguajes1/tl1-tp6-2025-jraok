@@ -1,5 +1,4 @@
 ﻿// variables para el programa
-using Microsoft.VisualBasic;
 
 int inverso = 0, numero = 0;
 bool bandera;
