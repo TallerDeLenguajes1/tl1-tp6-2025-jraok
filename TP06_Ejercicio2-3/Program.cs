@@ -63,12 +63,13 @@ do
                 break;
         }
     }
+    // bucle para la opcion de la una nueva operacion
     do
     {
         Console.WriteLine("Desea realizar otra operacion?");
         Console.WriteLine("1- Si \t 2- No");
         bandera = int.TryParse(Console.ReadLine(), out opcion);
-        if (opcion != 1 || opcion != 2 || !bandera)Console.WriteLine("Entrada invalida reingrese");
+        if (opcion != 1 || opcion != 2 || !bandera) Console.WriteLine("Entrada invalida reingrese");
     } while (opcion != 1 && opcion != 2 || !bandera);
     
 } while (opcion != 2);  /* control de la opcion del menu */
