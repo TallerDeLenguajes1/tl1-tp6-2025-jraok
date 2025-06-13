@@ -11,7 +11,6 @@ do
     Console.WriteLine("\t2__Restar");
     Console.WriteLine("\t3__Multiplicar");
     Console.WriteLine("\t4__Dividir");
-    Console.WriteLine("\t5__Salir");
 
     // lectura de la entrada
     input = Console.ReadLine();
@@ -20,7 +19,7 @@ do
     {
         Console.WriteLine("Opcion invalida reingrese");
     }
-    else if (opcion != 5)   /* si no seleccionamos salir entramos a la lógica del programa */
+    else
     {
         // bucles para ingresar numeros validos
         do
@@ -63,8 +62,13 @@ do
             default:
                 break;
         }
-    }else
-    {
-        Console.WriteLine("Saliendo del programa"); /* mensaje de salida */
     }
-} while (opcion != 5);  /* control de la opcion del menu */
+    do
+    {
+        Console.WriteLine("Desea realizar otra operacion?");
+        Console.WriteLine("1- Si \t 2- No");
+        bandera = int.TryParse(Console.ReadLine(), out opcion);
+        if (opcion != 1 || opcion != 2 || !bandera)Console.WriteLine("Entrada invalida reingrese");
+    } while (opcion != 1 && opcion != 2 || !bandera);
+    
+} while (opcion != 2);  /* control de la opcion del menu */
