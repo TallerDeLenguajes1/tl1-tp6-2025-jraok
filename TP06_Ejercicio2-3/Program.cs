@@ -26,16 +26,18 @@ do
         Console.WriteLine("Opcion invalida reingrese");
         continue;
     }
-
+    // en los casos del 1 al 6 solo hace falta una variable
     if (opcion >= 1 && opcion <= 6)
     {
-        float numero;
+        float numero;   /* variable para los calculos */
+        // bucle de control de la entrada
         do
         {
             Console.Write("\nIngrese el numero a operar: ");
             bandera = float.TryParse(Console.ReadLine(), out numero);
             if (!bandera) Console.WriteLine("Valor invalido reingrese"); /* mensaje de error */
         } while (!bandera);
+        // switch de opciones
         switch (opcion)
         {
             case 1:
@@ -64,9 +66,11 @@ do
         }
 
     }
-    else if (opcion == 7 || opcion == 8)
+    else if (opcion == 7 || opcion == 8) /* para los otros dos casos ya es necesario los variables */
     {
         float numero1, numero2;
+
+        // bucles de verificacion
         do
         {
             Console.Write("Ingrese el primer numero: ");
@@ -90,13 +94,13 @@ do
             Console.WriteLine($"Mínimo: {Math.Min(numero1, numero2)}");
         }
     }
-    
-    do
+
+    do  /* bucle para continuar en el programa */
     {
         Console.WriteLine("\nDesea realizar otra operacion?");
         Console.WriteLine("\t\t1- Si \t 2- No");
         bandera = int.TryParse(Console.ReadLine(), out opcion);
         if ((opcion != 1 && opcion != 2) || !bandera) Console.WriteLine("Entrada invalida reingrese");
     } while ((opcion != 1 && opcion != 2) || !bandera);
-    
+    Console.WriteLine(opcion == 2 ? "Saliendo del programa" : "");
 } while (opcion == 1);  /* control de la opcion del menu */
